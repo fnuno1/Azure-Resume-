@@ -526,6 +526,33 @@ header .title {
     margin-top: 10px; /* Adds space above the title */
 }
 
+/* Blue Line Styling for Blocks */
+.block {
+    position: relative; /* Allows for absolute positioning of the pseudo-element */
+    padding-bottom: 10px; /* Adds space at the bottom for the line */
+    margin-bottom: 20px; /* Adds space between blocks */
+    background-color: #1e1e1e; /* Dark background for blocks */
+    color: #e0e0e0; /* Light text color */
+    padding: 20px; /* Padding inside the blocks */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adds a shadow for a 3D effect */
+}
+
+/* Pseudo-element for blue line at the bottom */
+.block::after {
+    content: ""; /* Ensures the pseudo-element is displayed */
+    display: block; /* Makes it a block element */
+    height: 4px; /* Height of the blue line */
+    background-color: #4a90e2; /* Blue color */
+    position: absolute; /* Positions the line at the bottom */
+    bottom: 0; /* Positions it at the bottom of the block */
+    left: 0; /* Stretches it to the left edge */
+    right: 0; /* Stretches it to the right edge */
+    border-bottom-left-radius: 8px; /* Keeps the bottom-left corner rounded */ 
+    border-bottom-right-radius: 8px; /* Keeps the bottom-right corner rounded */
+}
+
+
 
 
 
